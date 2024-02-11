@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#f6f6f6;
+}
+.sun{
+    width: 50%;
+    
+position: absolute;
+top: 0;
+}
+.sun img{
+    width: 30%;
+    position: absolute;
+    animation-name: sun;
+    animation-duration: 8s;
+    right: -100%;
+    animation-iteration-count: infinite;
+
+}
+@keyframes sun {
+    from{
+        right:-100%
+    }
+    to{
+        right:100%
+    }
+}
+.cloud{
+    width: 50%;
+    
+position: absolute;
+top: 0;
+}
+.cloud img{
+    width: 150%;
+    position: absolute;
+    animation-name: cloud;
+    animation-duration: 15s;
+    right: -100%;
+    animation-iteration-count: infinite;
+
+}
+@keyframes cloud {
+    from{
+        right:-250%
+    }
+    to{
+        right:100%
+    }
+}
+.road{
+    width: 100%;
+    height: 100%;
+position: absolute;
+top: 400px;
+}
+.road img{
+    width: 100%;
+    position: absolute;
+    animation-name: road;
+    animation-duration: 8s;
+    right: -100%;
+    animation-iteration-count: infinite;
+    height: 120%;
+
+}
+@keyframes road {
+    from{
+        right:-100%
+    }
+    to{
+        right:100%
+    }
+}
+
+  .car img{
+    width: 300%;
+    height: 300%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .car {
+    margin-top: 300px;
+    margin-left: 250px;
+    width: 300px;
+    height: 100px;
+    background-color: #333;
+    position: relative;
+    
+  }
+  
+  .wheel {
+    width: 110px;
+    height: 110px;
+    background-color: #888;
+    border-radius: 50%;
+    position: absolute;
+    animation: rotateWheel 1s linear infinite; 
+  }
+  
+  .front-wheel {
+    
+    left: 196%;
+    top: 145px;
+  }
+  .front-wheel img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+  }
+  
+  .back-wheel {
+    right: 43px;
+    top: 143%;
+  }
+  .back-wheel img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+  }
+  
+
+  @keyframes rotateWheel {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+ 
+  
+  
+  
+  
